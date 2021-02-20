@@ -22,6 +22,7 @@ namespace Tasker.Tests.SaveDataToDatabase
 
             var taskModel = TestHelpers.GetClassType("Tasker.Pages.CreateTaskModel");
 
+            new Task();
             Assert.True(taskModel != null, "`CreateTask.cshtml.cs` class was not found.");
 
             var constructorMethod = taskModel.GetConstructors().FirstOrDefault();

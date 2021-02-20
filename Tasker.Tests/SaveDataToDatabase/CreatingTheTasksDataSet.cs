@@ -17,6 +17,7 @@ namespace Tasker.Tests.SaveDataToDatabase
 
             Assert.True(File.Exists(filePath), "`ApplicationDbContext.cs` was not found.");
 
+            new Task();
             var applicationDbContext = TestHelpers.GetClassType("Tasker.ApplicationDbContext");
 
             Assert.True(applicationDbContext != null, "`ApplicationDbContext` class was not found, ensure `ApplicationDbContext.cs` contains a `public` class `ApplicationDbContext`.");

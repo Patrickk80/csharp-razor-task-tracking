@@ -18,6 +18,7 @@ namespace Tasker.Tests.BuildingTaskForm
             Assert.True(File.Exists(filePath), "`Task.cs` should exist in the Tasker project.");
 
             var taskModel = TestHelpers.GetClassType("Tasker.Task");
+            new Task();
 
             Assert.True(taskModel != null, "`Task` class was not found, ensure `Task.cs` contains a `public` class `Task`.");
             
