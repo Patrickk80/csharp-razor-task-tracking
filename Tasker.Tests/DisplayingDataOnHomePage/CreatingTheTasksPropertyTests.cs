@@ -17,7 +17,7 @@ namespace Tasker.Tests.DisplayingDataOnHomePage
             + Path.DirectorySeparatorChar + "Index.cshtml.cs";
 
             Assert.True(File.Exists(filePath), "`Index.cshtml.cs` should exist in the Tasker project.");
-
+            new Task();
             var indexModel = TestHelpers.GetClassType("Tasker.Pages.IndexModel");
 
             Assert.True(indexModel != null, "`Index.cshtml.cs` class was not found.");
